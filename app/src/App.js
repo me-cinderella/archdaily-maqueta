@@ -8,7 +8,6 @@ function App() {
         <CustomHeader />
       </header>
       <body>
-        <h1>Hola mundo</h1>
       </body>
     </div>
   );

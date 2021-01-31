@@ -2,7 +2,13 @@ import React from 'react';
 
 function Logo() {
     return (
-        <div></div>
+        <div className="logo">
+            <img 
+                alt="ArchDaily"
+                data-pin-nopin="true" 
+                src="https://assets.adsttc.com/doodles/logo-us.png" 
+            />
+        </div>
     );
 }
 

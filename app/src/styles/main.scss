@@ -1,1 +1,9 @@
-@import "sass/header.scss";
+@import "./header.scss";
+
+body {
+    font-family: "Source Sans Pro", "Helvetica", sans-serif;
+    font-size: 14px;
+    color: #303030;
+    background: white;
+    -webkit-overflow-scrolling: touch;
+}

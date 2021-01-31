@@ -8,12 +8,12 @@ import SearchBar from './SearchBar';
 function CustomHeader() {
     return (
         <div>
-            <div>
+            <div className="sup-header-container">
                 <MenuSuperior />
                 <Logo />
                 <Login />
             </div>
-            <div>
+            <div className="sub-header-container">
                 <MenuInferior />
             </div>
             <div>
