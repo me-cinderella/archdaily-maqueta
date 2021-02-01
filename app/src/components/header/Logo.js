@@ -8,6 +8,9 @@ function Logo() {
                 data-pin-nopin="true" 
                 src="https://assets.adsttc.com/doodles/logo-us.png" 
             />
+            <span>
+                the world's most visited architecture website
+            </span>
         </div>
     );
 }

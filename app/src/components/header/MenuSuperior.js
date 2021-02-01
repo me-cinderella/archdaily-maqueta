@@ -2,12 +2,12 @@ import React from 'react';
 
 function MenuSuperior() {
     return (
-        <nav className="secondary-menu">
-            <ul>
-                <li><a href="#">Submit a project</a></li>
-                <li><a href="#">Advertise</a></li>
-                <li><a href="#">World</a></li>
-            </ul>
+        <nav className="secondary-menu container">
+            <a href="#">Submit a Project</a>
+            <a href="#">Advertise</a>
+            <div className="vertical-separator"></div>
+            <i></i>
+            <a href="#">World</a>
         </nav>
     );
 }

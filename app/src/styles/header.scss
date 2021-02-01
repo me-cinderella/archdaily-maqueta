@@ -1,73 +1,109 @@
 @import "variables.scss";
 
-.sup-header-container {
-    align-items: flex-start;
+.container {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-}
-
-.sub-header-container {
-    @extend .sup-header-container;
     justify-content: center;
 }
 
-nav {
+.sup-header {
+    align-items: flex-start;
+    height: 100px;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
 
-    align-items: center;
-    display: flex;
-    
+.sub-header {
+    flex-flow: column;
+}
+
+nav {
     a {
         text-decoration: none;
+
+        :hover {
+            color: $blue;
+        }
     }
 }
 
-.secondary-menu { 
-    @extend nav;
-    margin-bottom: 40px;
+header {
+    padding: 16px 16px 0 16px;
+}
+
+.secondary-menu {
+    height: 40px;
 
     a {
         color: $light-gray;
-        font-size: 16px;
-        margin: 0 12px;
+        margin-left: 24px;
     }
+
+    a:first-child, 
+    a:last-child {
+        margin-left: 0;
+    }
+
+    i {
+        background-image: url($icons-url);
+        background-position: 0 -1772px;
+        display: inline-block;
+        height: 10px;
+        margin-right: .6em;
+        margin-top: -4px;
+        width: 15px;
+    }
+
 }
 
 .primary-menu { 
-    @extend nav;
-    margin-bottom: 40px;
 
+    margin-bottom: 40px;
+    
     a {
         color: $dark-gray;
-        border-right: 1px solid #D8D8D8;
-        font-size: 21px;
+        font-size: 19px;
         font-weight: 600;
         padding: 0 24px;
+    }
+
+    a:not(:last-child) {
+        border-right: 1px solid #D8D8D8;
     }
 }
 
 .logo {
-    display: flex;
-    width: 145px; 
-    height: 75px;
-
+    
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    
     img {
-        width: 100%;
+        display: block;
+        margin: 6px auto 10px;
+        width: 145px; 
+    }
+
+    span { 
+        color: $light-gray;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 400;
     }
 }
 
 button {
-    border: none;
     border-radius: 3px;
+    border: none;
+    font-weight: bold;
+    height: 40px;
     margin: 0 0 0 16px;
     padding: 0 16px;
-    height: 40px;
-    font-size: 16px;
-    font-weight: bold;
 }
 
 .blue-button {
     @extend button;
-    background: #026CB6;
+    background: $blue;
     color: white;
 }
 
@@ -75,25 +111,47 @@ button {
     @extend button;
     background: transparent;
     color: $dark-gray;
-
+	margin: 0 0 0 8px;
+	padding: 0;
 }
 
 .search-bar-form {
-    display: flex;
-    align-items: center;
     margin: 0 auto;
+    position: relative;
+
+    svg {
+        height: 20px;
+        left: 0;
+        margin: 0 16px;
+        position: absolute;
+        top: 10px;
+        width: 20px;
+    }
 
     input {
         background: #F0F0F0;
         border-radius: 4px;
-        color: #767676;
-        font-size: 14px;
+        border: none;
+        color: $light-gray;
         font-weight: 600;
         height: 40px;
-        max-width: 660px;
-        width: calc(100% - 52px);
-        border: none;
-        padding: 10px;
-        margin: 0 auto;
+        padding-left: 52px;
+        width: 608px;
     }
+}
+
+.hamburger-menu {
+    width: 24px;
+    div {
+        background-color: $main-text-color;
+        height: 2px;
+        margin: 6px 0;
+    }
+}
+
+.vertical-separator {
+    background: #D8D8D8;
+    height: 20px;
+    margin: 0 24px;
+    width: 1px;
 }
