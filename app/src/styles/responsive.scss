@@ -1,0 +1,42 @@
+@media (min-width: 800px) {
+    .mobile-search, .mobile-hamburger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 1040px) {
+    .side-feat {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .sup-header, .sub-header, .thumbs-wrapper {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        align-content: center;
+        align-items: center;
+    }
+
+    .mobile-search {
+        width: 100%;
+        input {
+            width: 80%;
+        }
+        svg {
+            left: inherit;
+        }
+    }
+
+    .slide {
+        float: none;
+        display: flex;
+    }
+}

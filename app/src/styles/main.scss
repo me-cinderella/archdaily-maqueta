@@ -1,5 +1,6 @@
 @import "./header.scss";
 @import "./slide.scss";
+@import "./responsive.scss";
 @import "./variables.scss";
 
 body {
@@ -8,7 +9,6 @@ body {
     color: $main-text-color;
     background: white;
     margin: 0;
-    height: 700px;
 }
 
 a {
