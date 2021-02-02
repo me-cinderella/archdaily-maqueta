@@ -1,0 +1,99 @@
+@import './variables.scss';
+
+.main-content {
+    width: 1040px;
+    max-width: 100%;
+    margin: 0 auto;
+    margin-bottom: 0px;
+    position: relative;
+}
+
+.slide {
+    float: left;
+    height: 380px;
+    position: relative;
+    width: 548px;
+}
+
+.carousel {
+    img {
+        height: 380px;
+    }
+
+    .thumb {
+        border: none !important;
+        height: 120px !important;
+        opacity: 0.55;
+        width: 172px !important;
+    }
+
+    .thumbs.animated {
+        position: absolute;
+        top: -417px;
+        right: -10px;
+        
+        li {
+            position: absolute;
+
+            img {
+                height: 100%;
+            }
+
+            &:nth-child(1) {
+                top: 0;
+            }
+
+            &:nth-child(2) {
+                top: 132px;
+            }
+
+            &:nth-child(3) {
+                top: 265px;
+            }
+
+            &.selected {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+.legend {
+    background: white !important;
+    border-radius: 0 !important;
+    bottom: 20px !important;
+    font-size: 17px !important;
+    left: 0 !important;
+    margin: 0 !important;
+    opacity: 1 !important;
+    padding: 10px;
+    position: absolute; 
+    text-align: left !important;
+    width: 274px !important;
+
+    a {
+        color: $blue;
+    }
+
+    span {
+        font-size: 12px;
+        display: block;
+        line-height: normal;
+        margin: 0 0 5px;
+        color: $main-text-color;
+    }
+}
+
+.side-feat {
+    width: 300px;
+    height: 250px;
+    float: right;
+    position: relative;
+    background-position: 0 0;
+    background-size: cover;
+
+    .legend {
+        font-size: 13px !important;
+        width: 204px !important;
+    }
+}

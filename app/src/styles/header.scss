@@ -17,18 +17,9 @@
     flex-flow: column;
 }
 
-nav {
-    a {
-        text-decoration: none;
-
-        :hover {
-            color: $blue;
-        }
-    }
-}
-
 header {
     padding: 16px 16px 0 16px;
+    margin-bottom: 40px;
 }
 
 .secondary-menu {

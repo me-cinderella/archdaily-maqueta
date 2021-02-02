@@ -1,4 +1,5 @@
-import CustomHeader from './components/header'
+import CustomHeader from './components/header';
+import Main from './components/main';
 import './App.css';
 
 function App() {
@@ -7,8 +8,9 @@ function App() {
       <header>
         <CustomHeader />
       </header>
-      <body>
-      </body>
+      <div className="main-content">
+        <Main />
+      </div>
     </div>
   );
 }
